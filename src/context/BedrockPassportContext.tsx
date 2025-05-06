@@ -9,9 +9,9 @@ const BedrockPassportContext: React.FC<ProviderProps> = ({ children }) => {
   return (
     <BedrockPassportProvider
       baseUrl="https://api.bedrockpassport.com"
-      // ⚠️ IMPORTANT: Update this URL with your production URL after deployment
-      authCallbackUrl={import.meta.env.VITE_AUTH_CALLBACK_URL || "http://localhost:5173/auth/callback"}
-      // ⚠️ IMPORTANT: Your tenant ID from https://vibecodinglist.com/orange-id-integration
+      // ⚠️ IMPORTANT: This URL must be exactly the same as what you've whitelisted in the Orange ID dashboard
+      authCallbackUrl="https://web3-crowd-funding-8mbfx8j8n-subahan-ciccadas-projects.vercel.app/auth/callback"
+      // ⚠️ IMPORTANT: This is your project ID from the Orange ID dashboard after whitelisting your URL
       tenantId="orange-hgt3974b8s"
     >
       {children}
