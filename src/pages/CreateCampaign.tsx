@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../lib/supabase';
-import { useAuth } from '../context/AuthContext';
 import { Wallet } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
 export default function CreateCampaign() {
   const navigate = useNavigate();

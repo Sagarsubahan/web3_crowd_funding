@@ -7,12 +7,14 @@ import CreateCampaign from './pages/CreateCampaign';
 import AuthCallback from './pages/AuthCallback';
 import BedrockPassportContext from './context/BedrockPassportContext';
 import { AuthProvider } from './context/AuthContext';
+import BedrockSupabaseSync from './components/BedrockSupabaseSync';
 
 function App() {
   return (
     <BedrockPassportContext>
       <AuthProvider>
         <Router>
+          <BedrockSupabaseSync />
           <div className="min-h-screen bg-gray-50">
             <Navbar />
             <main className="container mx-auto px-4 py-8">
